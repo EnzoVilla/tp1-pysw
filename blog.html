@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog de Fitness</title>
+        <link rel="stylesheet" href="resources/css/blog.css">
+        <link rel="stylesheet" href="resources/css/variables-y-estandares.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+        <script src="resources/js/blog.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <section class="superior">
+                <header>
+                    <h1 class="titulo">VILLAGRAN GYM</h1> 
+                </header>
+                <nav>
+                    <a class="subtitulo-menor navegacion" href="index.html">INICIO</a>
+                </nav>
+            </section>
+            <h1 class="titulo">Blog de Fitness</h1>
+            <div class="tags-categorias">
+                <input type="radio" name="filtro" id="todos" checked>
+                <label for="todos" class="minuscula-fuente-variable">Todos</label>
+
+                <input type="radio" name="filtro" id="nutricion">
+                <label for="nutricion" class="minuscula-fuente-variable">Nutrición</label>
+
+                <input type="radio" name="filtro" id="entrenamiento">
+                <label for="entrenamiento" class="minuscula-fuente-variable">Entrenamiento</label>
+
+                <input type="radio" name="filtro" id="recetas">
+                <label for="recetas" class="minuscula-fuente-variable">Recetas</label>
+
+                <input type="radio" name="filtro" id="estilo-vida">
+                <label for="estilo-vida" class="minuscula-fuente-variable">Estilo de Vida</label>
+            </div>
+        </header>
+        <main class="blog-grid">
+            <article class="articulo nutricion reveal">
+                <img src="resources/images/super-alimentos.avif" alt="Consejos de Nutrición">
+                <h3 class="subtitulo-menor">10 Superalimentos para Potenciar tu Energía</h3>
+                <p class="tag minuscula-fuente-variable">#Nutrición #Energía</p>
+                <p class="minuscula-fuente-variable">Descubre los mejores alimentos para mantenerte activo durante todo el día...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo entrenamiento reveal">
+                <img src="resources/images/crossfit.webp" alt="Rutina de Entrenamiento">
+                <h3 class="subtitulo-menor">Rutina de Cuerpo Completo para Principiantes</h3>
+                <p class="tag minuscula-fuente-variable">#Entrenamiento #Principiantes</p>
+                <p class="minuscula-fuente-variable">Una guía sencilla para comenzar tu viaje fitness con ejercicios efectivos...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo recetas reveal">
+                <img src="resources/images/batido-avena.jpg" alt="Receta Saludable">
+                <h3 class="subtitulo-menor">Desayuno Energético: Batido de Avena y Frutas</h3>
+                <p class="tag minuscula-fuente-variable">#Recetas #Desayuno</p>
+                <p class="minuscula-fuente-variable">Prepara un batido delicioso y nutritivo en solo minutos...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo estilo-vida reveal">
+                <img src="resources/images/habitos-de-vida-saludable.jpg" alt="Consejos de Estilo de Vida">
+                <h3 class="subtitulo-menor">5 Hábitos para un Estilo de Vida Saludable y Activo</h3>
+                <p class="tag minuscula-fuente-variable">#EstiloDeVida #Salud</p>
+                <p class="minuscula-fuente-variable">Incorpora estos simples hábitos en tu rutina diaria para mejorar tu bienestar...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo nutricion reveal">
+                <img src="resources/images/mitos-nutricionales.jpg" alt="Mitos de Nutrición">
+                <h3 class="subtitulo-menor">Mitos Comunes sobre la Nutrición Deportiva Desmentidos</h3>
+                <p class="tag minuscula-fuente-variable">#Nutrición #Mitos</p>
+                <p class="minuscula-fuente-variable">Aclara las confusiones más frecuentes sobre la alimentación para deportistas...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo entrenamiento reveal" style="grid-column: span 2;">
+                <img src="resources/images/hiit.webp" alt="Entrenamiento Avanzado">
+                <h3 class="subtitulo-menor">Entrenamiento de Alta Intensidad para Quemar Grasa</h3>
+                <p class="tag minuscula-fuente-variable">#Entrenamiento #HIIT</p>
+                <p class="minuscula-fuente-variable">Descubre una rutina HIIT efectiva para maximizar la quema de calorías y mejorar tu condición física...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo recetas reveal">
+                <img src="resources/images/quinoa-verduras.jpg" alt="Cena Saludable">
+                <h3 class="subtitulo-menor">Cena Ligera y Nutritiva: Ensalada de Quinoa y Vegetales</h3>
+                <p class="tag minuscula-fuente-variable">#Recetas #Cena</p>
+                <p class="minuscula-fuente-variable">Una opción deliciosa y fácil de preparar para una cena saludable...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+
+            <article class="articulo estilo-vida reveal">
+                <img src="resources/images/descanso.jpg" alt="Bienestar Mental">
+                <h3 class="subtitulo-menor">La Importancia del Descanso y la Recuperación Mental</h3>
+                <p class="tag minuscula-fuente-variable">#EstiloDeVida #Bienestar</p>
+                <p class="minuscula-fuente-variable">Aprende cómo el descanso adecuado influye en tu rendimiento físico y mental...</p>
+                <a href="#" class="minuscula-fuente-variable">Leer más</a>
+            </article>
+        </main>
+        <section class="comentarios">
+            <h2 class="titulo">Comentarios</h2>
+            <div class="comentario">
+                <div class="avatar"></div>
+                <div class="texto-comentario">
+                    <h3 class="subtitulo">Usuario 1</h3>
+                    <p class="minuscula-fuente-variable">¡Excelente artículo! Muy útil para mis entrenamientos.</p>
+                </div>
+            </div>
+            <div class="comentario">
+                <div class="avatar mujer"></div>
+                <div class="texto-comentario">
+                    <h3 class="subtitulo">Usuaria 2</h3>
+                    <p class="minuscula-fuente-variable">Me encantó la receta, la probaré hoy mismo.</p>
+                </div>
+            </div>
+            <div class="comentario">
+                <div class="avatar hombre gafas"></div>
+                <div class="texto-comentario">
+                    <h3 class="subtitulo">Usuario 3</h3>
+                    <p class="minuscula-fuente-variable">Información muy completa sobre nutrición deportiva.</p>
+                </div>
+            </div>
+        </section>
+        <div class="informacion">
+            <div>
+                <h2 class="subtitulo">Donde nos encontramos?</h2>
+                <ul class="horarios-mapa">
+                    <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/MapMarker5.png" alt="mapa" style="width: 25px;">Ramirez de velazco 620</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="subtitulo">Nuestros Horarios:</h2>
+                <ul class="horarios-mapa">
+                    <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Lunes - Sabados: 06:00-00:00</li>
+                    <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Domingos y Feriados: 10:00-18:00</li>
+                </ul>
+            </div>
+        </div> 
+        <footer class="inferior">
+                <div class="footer">
+                    <div>
+                        <h2 class="minuscula-fuente-variable subtitulo-footer">Suscribete a nuestro Newsletter</h2>
+                            <form method="POST">
+                                <input class="texto-pequenio" type="email" name="email" placeholder="Ingresa tu correo" required>
+                                <button class="texto-pequenio" type="submit">Suscribirse</button>
+                            </form>
+                    </div>
+                    <div>
+                        <h2 class="minuscula-fuente-variable subtitulo-footer">Contactos</h2>
+                        <ul class="contactos">
+                            <li class="texto-normal"><img src="resources/icons/Telephone1.png" alt="telefono" style="width: 25px;">+54 9 381231231</li>
+                            <li class="texto-normal"><img src="resources/icons/Envelope1.png" alt="email" style="width: 25px;">correo@ejemplo.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="minuscula-fuente-variable subtitulo-footer">Nuestras redes sociales</h2>
+                        <ul class="redes-sociales">
+                            <li><a href="#" aria-label="Link para ir a facebook"><img src="resources/icons/Facebook.png" alt="facebook" class="logo-red-social"></a></li>
+                            <li><a href="#" aria-label="Link para ir a instagram"><img src="resources/icons/Instagram.png" alt="instagram" class="logo-red-social"></a></li>
+                            <li><a href="#" aria-label="Link para ir a whatsapp"><img src="resources/icons/Whatsapp.png" alt="whatsapp" class="logo-red-social"></a></li>
+                            <li><a href="#" aria-label="Link para ir a tiktok"><img src="resources/icons/Tiktok.png" alt="tiktok" class="logo-red-social"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <p class="texto-pequenio">&copy; 2025 pagina de Enzo Villagran. Todos los derechos reservados.</p>
+                </div>  
+        </footer>
+    </body>
+</html>

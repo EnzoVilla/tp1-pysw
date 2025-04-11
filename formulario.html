@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/formulario.css">
+    <link rel="stylesheet" href="resources/css/variables-y-estandares.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header class="superior">
+        <h1 class="titulo">VILLAGRAN GYM</h1>
+        <nav>
+            <a class="subtitulo-menor" href="index.html">INICIO</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="titulo">Nos pongamos en contacto</h1>
+        <form id="contactForm" class="formulario" novalidate>
+            <div class="formulario-grid">
+                <div class="elemento-nombre"> 
+                    <div class="grupo">
+                        <label for="nombre" class="form-label minuscula-fuente-variable">Nombre <span style="color: #F44336;">*</span></label>
+                        <input type="text" id="nombre" name="nombre" class="form-input" required placeholder="Tu nombre" pattern="^[A-Za-z ]{2,50}$" />
+                    </div>
+                </div>
+                <div class="elemento-email">
+                    <div class="grupo">
+                        <label for="email" class="form-label minuscula-fuente-variable">Correo <span style="color: #F44336;">*</span></label>
+                        <input type="mail" id="email" name="email" class="form-input" required placeholder="your.email@example.com" />
+                    </div>
+                </div>
+                <div class="elemento-telefono">
+                    <div class="grupo">
+                        <label for="phone" class="form-label minuscula-fuente-variable">Telefono <span style="color: #F44336;">*</span></label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required placeholder="(123) 456-7890"pattern="^[\d\+\-\(\) ]{7,20}$" />
+                    </div>
+                </div>
+                <div class="elemento-asunto">
+                    <div class="grupo">
+                        <label for="subject" class="form-label minuscula-fuente-variable">
+                            Asunto <span style="color: #F44336;">*</span>
+                        </label>
+                        <select id="subject" name="subject" class="form-select" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="general">Consulta general</option>
+                            <option value="soporte">Apoyo técnico</option>
+                            <option value="consulta-especifica">Pregunta especifica</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="elemento-mensaje">
+                    <div class="grupo">
+                        <label for="message" class="form-label minuscula-fuente-variable">Mensaje <span style="color: #F44336;">*</span></label>
+                        <textarea id="message" name="message" class="form-textarea" required placeholder="Tu mensaje aqui..." minlength="10" maxlength="500"></textarea>
+                        <p class="texto-pequenio">
+                            <span id="charCount">0</span>/500 caracteres
+                        </p>
+                    </div>
+                </div>
+                <div class="elemento-boton">
+                    <div class="btn-container">
+                        <button type="submit" id="submitButton" class="btn mayuscula-fuente-variable">
+                            Enviar
+                        </button>
+                        <button type="submit" id="submittingButton" class="btn mayuscula-fuente-variable" style="display: none;"
+                            disabled>
+                            <span class="spinner"></span>
+                            Enviando...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <button id="modalClose" class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <div class="success-icon"></div>
+                    <h3 class="subtitulo-menor" style="margin-bottom: 8px;">Muchas gracias!</h3>
+                    <p class="texto-normal" style="color: #666;">Tu mensaje se envió exitosamente!</p>
+                    <button id="modalCloseButton" class="btn mayuscula-fuente-variable"
+                        style="margin-top: 24px;">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="informacion">
+        <div>
+            <h2 class="subtitulo">Donde nos encontramos?</h2>
+            <ul class="horarios-mapa">
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/MapMarker5.png" alt="mapa" style="width: 25px;">Ramirez de velazco 620</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="subtitulo">Nuestros Horarios:</h2>
+            <ul class="horarios-mapa">
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Lunes - Sabados: 06:00-00:00</li>
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Domingos y Feriados: 10:00-18:00</li>
+            </ul>
+        </div>
+    </div> 
+    <footer class="inferior">
+        <div class="footer">
+            <div>
+                <h2 class="minuscula-fuente-variable subtitulo-footer">Suscribete a nuestro Newsletter</h2>
+                <form method="POST">
+                    <input class="texto-pequenio" type="email" name="email" placeholder="Ingresa tu correo" required>
+                    <button class="texto-pequenio" type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <div>
+                <h2 class="minuscula-fuente-variable subtitulo-footer">Contactos</h2>
+                <ul class="contactos">
+                    <li class="texto-normal"><img src="resources/icons/Telephone1.png" alt="telefono"
+                            style="width: 25px;">+54 9 381231231</li>
+                    <li class="texto-normal"><img src="resources/icons/Envelope1.png" alt="email"
+                            style="width: 25px;">correo@ejemplo.com</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="minuscula-fuente-variable subtitulo-footer">Nuestras redes sociales</h2>
+                <ul class="redes-sociales">
+                    <li><a href="#" aria-label="Link para ir a facebook"><img src="resources/icons/Facebook.png"
+                                alt="facebook" class="logo-red-social"></a></li>
+                    <li><a href="#" aria-label="Link para ir a instagram"><img src="resources/icons/Instagram.png"
+                                alt="instagram" class="logo-red-social"></a></li>
+                    <li><a href="#" aria-label="Link para ir a whatsapp"><img src="resources/icons/Whatsapp.png"
+                                alt="whatsapp" class="logo-red-social"></a></li>
+                    <li><a href="#" aria-label="Link para ir a tiktok"><img src="resources/icons/Tiktok.png"
+                                alt="tiktok" class="logo-red-social"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p class="texto-pequenio">&copy; 2025 pagina de Enzo Villagran. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="resources/js/formulario.js"></script>
+</html>

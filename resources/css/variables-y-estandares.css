@@ -1,0 +1,163 @@
+:root {
+    /* Color del tema de la pagina */
+    --bg-principal: #000;
+    --bg-claro: #fff;
+    --bg-secundario-gris: #3F403B;
+    --bg-terciario-color: #2b5e6a;
+    --hover-principal: #82a8b8;
+    --letra-claro: #fff;
+    --letra-oscuro: #000;
+
+    /* Tamaños de fuentes */
+    --fuente-base: 1rem;
+    /* Generalmente 16px por defecto */
+    --fuente-titulo-h1: 2.25rem;
+    /* 36px */
+    --fuente-titulo-h2: 1.75rem;
+    /* 28px */
+    --fuente-titulo-h3: 1.375rem;
+    /* 22px */
+    --fuente-texto-normal: 1rem;
+    /* 16px */
+    --fuente-texto-pequeno: 0.875rem;
+    /* 14px */
+
+    /* Fuentes */
+    --fuente-titulos: 'Bebas Neue', sans-serif;
+    --fuente-minuscula: 'Oswald', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-principal);
+    color: var(--letra-claro);
+}
+
+.titulo {
+    font-family: var(--fuente-titulos);
+    font-size: var(--fuente-titulo-h1);
+}
+
+.subtitulo {
+    font-family: var(--fuente-titulos);
+    font-size: var(--fuente-titulo-h2);
+}
+
+.subtitulo-menor {
+    font-family: var(--fuente-titulos);
+    font-size: var(--fuente-titulo-h3);
+}
+
+.texto-normal {
+    font-family: var(--fuente-minuscula);
+    font-size: var(--fuente-texto-normal);
+}
+
+.texto-pequenio {
+    font-family: var(--fuente-minuscula);
+    font-size: var(--fuente-texto-pequeno);
+}
+
+.mayuscula-fuente-variable {
+    font-family: var(--fuente-titulos);
+}
+
+.minuscula-fuente-variable {
+    font-family: var(--fuente-minuscula);
+}
+
+.footer {
+    background-color: var(--bg-principal);
+    color: var(--letra-claro);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 150px;
+}
+
+.subtitulo-footer {
+    font-size: 20px;
+}
+
+.logo-red-social {
+    width: 25px;
+}
+
+.redes-sociales {
+    align-items: center;
+    padding: 0 2px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contactos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contactos li img {
+    margin-right: 10px;
+}
+
+.footer-legal {
+    text-align: center;
+    padding: 2px 2px;
+    color: var(--bg-secundario-gris);
+}
+
+input[type="email"] {
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+
+button {
+    height: 30px;
+    background-color: var(--hover-principal);
+    border-radius: 5px;
+    color: var(--letra-oscuro);
+    cursor: pointer;
+    border: none;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--hover-principal);
+    color: var(--letra-oscuro);
+    height: 200px;
+}
+
+.horarios-mapa {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horarios-mapa li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.horarios-mapa li img {
+    margin-right: 10px;
+}
+
+.subtitulo-mapa {
+    font-size: 20px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/precios-nuevo.css">
+    <link rel="stylesheet" href="resources/css/variables-y-estandares.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    <script src="resources/js/precios.js"></script>
+    <title>Precios</title>
+</head>
+<body>
+    <header>
+        <section class="superior">    
+            <h1 class="titulo">VILLAGRAN GYM</h1> 
+            <nav>
+                <a class="subtitulo-menor" href="index.html">INICIO</a>
+            </nav>
+        </section>
+        <section class="precios-nav">
+            <h1 class="titulo">Nuestros Planes de Precios</h1>
+            <div class="toggle-container">
+                <input type="radio" id="mensual" name="plan" checked>
+                <label for="mensual"class="minuscula-fuente-variable">Mensual</label>
+                <input type="radio" id="anual" name="plan">
+                <label for="anual" class="minuscula-fuente-variable">Anual</label>
+            </div>
+        </section>
+    </header>
+    <main class="planes-container">
+        <div class="plan">
+            <h1 class="titulo">BASICO</h1>
+            <div class="price mensual-price titulo">$25/mes</div>
+            <div class="price anual-price titulo">$240/año</div>
+            <ul class="minuscula-fuente-variable">
+                <li>Acceso a sala de pesas</li>
+                <li>1 clase grupal por semana</li>
+                <li class="tooltip-container">Soporte básico <span class="tooltip">Soporte vía email</span></li>
+            </ul>
+            <button class="minuscula-fuente-variable">Seleccionar Básico</button>
+        </div>
+        <div class="plan">
+            <h1 class="titulo">POPULAR</h1>
+            <div class="price mensual-price titulo">$40/mes</div>
+            <div class="price anual-price titulo">$380/año</div>
+            <ul class="minuscula-fuente-variable">
+                <li>Acceso ilimitado a sala de pesas</li>
+                <li>3 clases grupales por semana</li>
+                <li class="tooltip-container">Soporte prioritario <span class="tooltip">Soporte telefónico y email</span></li>
+                <li class="tooltip-container">Evaluación física mensual <span class="tooltip">Seguimiento de tu progreso</span></li>
+            </ul>
+            <button class="minuscula-fuente-variable">Seleccionar Popular</button>
+        </div>
+        <div class="plan">
+            <h1 class="titulo">PREMIUM</h1>
+            <div class="price mensual-price titulo">$60/mes</div>
+            <div class="price anual-price titulo">$570/año</div>
+            <ul class="minuscula-fuente-variable">
+                <li>Acceso ilimitado a todas las instalaciones</li>
+                <li>Clases grupales ilimitadas</li>
+                <li class="tooltip-container">Entrenamiento personalizado <span class="tooltip">Plan de entrenamiento individualizado</span></li>
+                <li class="tooltip-container">Soporte 24/7 <span class="tooltip">Asistencia en cualquier momento</span></li>
+                <li class="tooltip-container">Acceso a nutricionista <span class="tooltip">Consulta mensual con experto</span></li>
+            </ul>
+            <button class="minuscula-fuente-variable">Seleccionar Premium</button>
+        </div>
+    </main>
+    <div class="informacion">
+        <div>
+            <h2 class="subtitulo">Donde nos encontramos?</h2>
+            <ul class="horarios-mapa">
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/MapMarker5.png" alt="mapa" style="width: 25px;">Ramirez de velazco 620</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="subtitulo">Nuestros Horarios:</h2>
+            <ul class="horarios-mapa">
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Lunes - Sabados: 06:00-00:00</li>
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Domingos y Feriados: 10:00-18:00</li>
+            </ul>
+        </div>
+    </div> 
+    <footer class="inferior">
+            <div class="footer">
+                <div>
+                    <h2 class="minuscula-fuente-variable subtitulo-footer">Suscribete a nuestro Newsletter</h2>
+                        <form method="POST">
+                            <input class="texto-pequenio" type="email" name="email" placeholder="Ingresa tu correo" required>
+                            <button class="texto-pequenio" type="submit">Suscribirse</button>
+                        </form>
+                </div>
+                <div>
+                    <h2 class="minuscula-fuente-variable subtitulo-footer">Contactos</h2>
+                    <ul class="contactos">
+                        <li class="texto-normal"><img src="resources/icons/Telephone1.png" alt="telefono" style="width: 25px;">+54 9 381231231</li>
+                        <li class="texto-normal"><img src="resources/icons/Envelope1.png" alt="email" style="width: 25px;">correo@ejemplo.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="minuscula-fuente-variable subtitulo-footer">Nuestras redes sociales</h2>
+                    <ul class="redes-sociales">
+                        <li><a href="#" aria-label="Link para ir a facebook"><img src="resources/icons/Facebook.png" alt="facebook" class="logo-red-social"></a></li>
+                        <li><a href="#" aria-label="Link para ir a instagram"><img src="resources/icons/Instagram.png" alt="instagram" class="logo-red-social"></a></li>
+                        <li><a href="#" aria-label="Link para ir a whatsapp"><img src="resources/icons/Whatsapp.png" alt="whatsapp" class="logo-red-social"></a></li>
+                        <li><a href="#" aria-label="Link para ir a tiktok"><img src="resources/icons/Tiktok.png" alt="tiktok" class="logo-red-social"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p class="texto-pequenio">&copy; 2025 pagina de Enzo Villagran. Todos los derechos reservados.</p>
+            </div>  
+    </footer>
+</body>
+</html>

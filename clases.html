@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/clases.css">
+    <link rel="stylesheet" href="resources/css/variables-y-estandares.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    <title>Clases</title>
+</head>
+<body>
+    <section class="superior">
+        <header>
+            <h1 class="titulo">VILLAGRAN GYM</h1> 
+        </header>
+        <nav>
+            <a class="subtitulo-menor" href="index.html">INICIO</a>
+        </nav>
+    </section>
+    <section class="principal-clases">
+        <main>
+            <h1 class="titulo">Nuestras Clases</h1>
+            <input type="radio" name="categorias" id="todos" value="todos" checked>
+            <input type="radio" name="categorias" id="musculacion" value="musculacion">
+            <input type="radio" name="categorias" id="crossfit" value="crossfit">
+            <input type="radio" name="categorias" id="yoga" value="yoga">
+            <input type="radio" name="categorias" id="spinning" value="spinning">
+            
+            <div class="container-categoria texto-normal">
+                <label for="todos">Todas</label>
+                <label for="musculacion">Musculación</label>
+                <label for="crossfit">CrossFit</label>    
+                <label for="yoga">Yoga</label>
+                <label for="spinning">Spinning</label>
+            </div>
+            <div class="galeria-masonry">
+                <div class="clase-card" data-categoria="musculacion">
+                    <img src="resources/images/clase-musculacion-1.jpeg" alt="Clase de Musculación">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Musculación Avanzada</h3>
+                        <p class="texto-normal">Enfocada en fuerza y desarrollo muscular.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="crossfit">
+                    <img src="resources/images/clase-crossfit-1.webp" alt="Clase de CrossFit">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">CrossFit Nivel 1</h3>
+                        <p class="texto-normal">Entrenamiento funcional de alta intensidad.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="yoga">
+                    <img src="resources/images/clase-yoga-1.jpg" alt="Clase de Yoga">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Hatha Yoga</h3>
+                        <p class="texto-normal">Posturas básicas y respiración consciente.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="spinning">
+                    <img src="resources/images/clase-spinning-1.jpg" alt="Clase de Spinning">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Spinning Intermedio</h3>
+                        <p class="texto-normal">Rutinas dinámicas sobre bicicleta estática.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="musculacion">
+                    <img src="resources/images/clase-musculacion-2.jpg" alt="Clase de Musculación">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Técnica de Levantamiento</h3>
+                        <p class="texto-normal">Aprendizaje y mejora de la técnica.</p>
+                    </div>
+                </div>
+            
+                <div class="clase-card" data-categoria="yoga">
+                    <img src="resources/images/clase-yoga-2.jpg" alt="Clase de Yoga">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Vinyasa Flow</h3>
+                        <p class="texto-normal">Secuencias fluidas y dinámicas.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="spinning">
+                    <img src="resources/images/clase-spinning-2.jpg" alt="Clase de Spinning">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Spinning Endurance</h3>
+                        <p class="texto-normal">Clase enfocada en la resistencia cardiovascular.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="musculacion">
+                    <img src="resources/images/clase-musculacion-3.jpg" alt="Clase de Musculación" >
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Full Body Muscular</h3>
+                        <p class="texto-normal">Entrenamiento completo para todos los grupos musculares.</p>
+                    </div>
+                </div>
+                
+                <div class="clase-card" data-categoria="crossfit">
+                    <img src="resources/images/clase-crossfit-3.jpg" alt="Clase de CrossFit" style="height: 250px;">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">CrossFit Fundamentos</h3>
+                        <p class="texto-normal">Introducción a los movimientos básicos.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="yoga">
+                    <img src="resources/images/clase-yoga-3.jpg" alt="Clase de Yoga" style="height: 350px;">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Restorative Yoga</h3>
+                        <p class="texto-normal">Posturas suaves para la relajación profunda.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="spinning">
+                    <img src="resources/images/clase-spinning-3.jpg" alt="Clase de Spinning" style="height: 200px;">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">Spinning HIIT</h3>
+                        <p class="texto-normal">Entrenamiento de intervalos de alta intensidad.</p>
+                    </div>
+                </div>
+                <div class="clase-card" data-categoria="crossfit">
+                    <img src="resources/images/clase-crossfit-23.jpg" alt="Clase de CrossFit">
+                    <div class="overlay">
+                        <h3 class="subtitulo-menor">CrossFit Games Prep</h3>
+                        <p class="texto-normal">Entrenamiento avanzado para competición.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="horarios">
+        <h2 class="titulo">Horario Semanal</h2>
+        <div class="tabla-container texto-normal">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>09:00 - 10:00</th>
+                        <td class="musculacion">Musculación</td>
+                        <td class="yoga">Yoga</td>
+                        <td class="musculacion">Musculación</td>
+                        <td class="crossfit">CrossFit</td>
+                        <td class="yoga">Yoga</td>
+                        <td class="ninguna"></td>
+                        <td class="ninguna"></td>
+                    </tr>
+                    <tr>
+                        <th>10:30 - 11:30</th>
+                        <td class="crossfit">CrossFit</td>
+                        <td class="spinning">Spinning</td>
+                        <td class="crossfit">CrossFit</td>
+                        <td class="musculacion">Musculación</td>
+                        <td class="spinning">Spinning</td>
+                        <td class="yoga">Yoga</td>
+                        <td class="ninguna"></td>
+                    </tr>
+                    <tr>
+                        <th>17:00 - 18:00</th>
+                        <td class="yoga">Yoga</td>
+                        <td class="musculacion">Musculación</td>
+                        <td class="yoga">Yoga</td>
+                        <td class="spinning">Spinning</td>
+                        <td class="musculacion">Musculación</td>
+                        <td class="crossfit">CrossFit</td>
+                        <td class="ninguna"></td>
+                    </tr>
+                    <tr>
+                        <th>18:30 - 19:30</th>
+                        <td class="spinning">Spinning</td>
+                        <td class="crossfit">CrossFit</td>
+                        <td class="spinning">Spinning</td>
+                        <td class="yoga">Yoga</td>
+                        <td class="crossfit">CrossFit</td>
+                        <td class="musculacion">Musculación</td>
+                        <td class="ninguna"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="informacion">
+        <div>
+            <h2 class="subtitulo">Donde nos encontramos?</h2>
+            <ul class="horarios-mapa">
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/MapMarker5.png" alt="mapa" style="width: 25px;">Ramirez de velazco 620</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="subtitulo">Nuestros Horarios:</h2>
+            <ul class="horarios-mapa">
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Lunes - Sabados: 06:00-00:00</li>
+                <li class="minuscula-fuente-variable subtitulo-mapa"><img src="resources/icons/Hourglass.png" alt="reloj" style="width: 25px;">Domingos y Feriados: 10:00-18:00</li>
+            </ul>
+        </div>
+    </div>    
+    <section class="inferior">
+        <footer class="footer">
+            <div>
+                <h2 class="minuscula-fuente-variable subtitulo-footer">Suscribete a nuestro Newsletter</h2>
+                    <form method="POST">
+                        <input class="texto-pequenio" type="email" name="email" placeholder="Ingresa tu correo" required>
+                        <button class="texto-pequenio" type="submit">Suscribirse</button>
+                    </form>
+            </div>
+            <div>
+                <h2 class="minuscula-fuente-variable subtitulo-footer">Contactos</h2>
+                <ul class="contactos">
+                    <li class="texto-normal"><img src="resources/icons/Telephone1.png" alt="telefono" style="width: 25px;">+54 9 381231231</li>
+                    <li class="texto-normal"><img src="resources/icons/Envelope1.png" alt="email" style="width: 25px;">correo@ejemplo.com</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="minuscula-fuente-variable subtitulo-footer">Nuestras redes sociales</h2>
+                <ul class="redes-sociales">
+                    <li><a href="#" aria-label="Link para ir a facebook"><img src="resources/icons/Facebook.png" alt="facebook" class="logo-red-social"></a></li>
+                    <li><a href="#" aria-label="Link para ir a instagram"><img src="resources/icons/Instagram.png" alt="instagram" class="logo-red-social"></a></li>
+                    <li><a href="#" aria-label="Link para ir a whatsapp"><img src="resources/icons/Whatsapp.png" alt="whatsapp" class="logo-red-social"></a></li>
+                    <li><a href="#" aria-label="Link para ir a tiktok"><img src="resources/icons/Tiktok.png" alt="tiktok" class="logo-red-social"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer-legal">
+            <p class="texto-pequenio">&copy; 2025 pagina de Enzo Villagran. Todos los derechos reservados.</p>
+        </div>  
+</section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.superior a {
+    text-decoration: none;
+    color: var(--letra-clara);
+}
+
+.profesionales {
+    text-align: center;
+}
+
+main {
+    padding-top: 50px;
+    height: 600px;
+}
+
+.entrenadores-container {
+    margin: 50px 0;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.entrenador {
+    background-color: var(--bg-claro);
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.entrenador h1,
+.entrenador p {
+    color: var(--letra-oscuro);
+}
+
+.perfil-entrenador {
+    width: 200px;
+}
+.card {
+    width: 300px;
+    height: 400px;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    /* Mantiene la perspectiva 3D para los hijos */
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    /* Rota la card 180 grados en el eje Y al hacer hover */
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Oculta la parte trasera del elemento cuando está de frente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+    /* Color de fondo del frente y el reverso */
+}
+
+.card-face-front {
+    /* Estilos específicos para el frente de la card */
+    color: #333;
+}
+
+.card-face-back {
+    /* Estilos específicos para el reverso de la card */
+    background-color: var(--hover-principal);
+    /* Otro color para diferenciar */
+    color: var(--letra-oscuro);
+    transform: rotateY(180deg);
+    /* Rota el reverso 180 grados inicialmente para que esté oculto */
+}
+
+.card-face img {
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: cover;
+    /* Ajusta la imagen al contenedor sin deformarla */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card-face h3 {
+    margin-top: 0;
+}
+
+.habilidad {
+    width: 80%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.barra-contenedor {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.barra {
+    background-color: #3cb658;
+    color: white;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 0.9em;
+}
+
+/* Sistema de Rating con Estrellas Animadas (CSS-only) */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-rating {
+    font-size: 24px;
+    color: #ccc;
+    display: flex;
+}
+
+.star {
+    cursor: pointer;
+    /* Opcional si quieres que sean interactivos (solo visual aquí) */
+    transition: color 0.3s ease;
+}
+
+.star.filled {
+    color: rgb(255, 217, 0);
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .entrenadores-grid {
+        grid-template-columns: 1fr;
+    }
+}
